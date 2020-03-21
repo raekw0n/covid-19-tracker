@@ -88,7 +88,7 @@
                         <option value="Benin">Benin</option>
                         <option value="Bhutan">Bhutan</option>
                         <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia Herzegovina">Bosnia Herzegovina</option>
+                        <option value="Bosnia">Bosnia & Herzegovina</option>
                         <option value="Botswana">Botswana</option>
                         <option value="Brazil">Brazil</option>
                         <option value="Brunei">Brunei</option>
@@ -106,9 +106,10 @@
                         <option value="Colombia">Colombia</option>
                         <option value="Comoros">Comoros</option>
                         <option value="Congo">Congo</option>
-                        <option value="Congo {Democratic Rep}">Congo {Democratic Rep}</option>
                         <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cote d'Ivoire">Cote d'Ivoire</option>
                         <option value="Croatia">Croatia</option>
+                        <option value="Cruise Ship">Cruise Ship</option>
                         <option value="Cuba">Cuba</option>
                         <option value="Cyprus">Cyprus</option>
                         <option value="Czech Republic">Czech Republic</option>
@@ -139,6 +140,7 @@
                         <option value="Guinea-Bissau">Guinea-Bissau</option>
                         <option value="Guyana">Guyana</option>
                         <option value="Haiti">Haiti</option>
+                        <option value="Holy See">Holy See</option>
                         <option value="Honduras">Honduras</option>
                         <option value="Hungary">Hungary</option>
                         <option value="Iceland">Iceland</option>
@@ -146,18 +148,17 @@
                         <option value="Indonesia">Indonesia</option>
                         <option value="Iran">Iran</option>
                         <option value="Iraq">Iraq</option>
-                        <option value="Ireland {Republic}">Ireland {Republic}</option>
+                        <option value="Ireland">Ireland</option>
                         <option value="Israel">Israel</option>
                         <option value="Italy">Italy</option>
-                        <option value="Ivory Coast">Ivory Coast</option>
                         <option value="Jamaica">Jamaica</option>
                         <option value="Japan">Japan</option>
                         <option value="Jordan">Jordan</option>
                         <option value="Kazakhstan">Kazakhstan</option>
                         <option value="Kenya">Kenya</option>
                         <option value="Kiribati">Kiribati</option>
-                        <option value="Korea North">Korea North</option>
-                        <option value="Korea South">Korea South</option>
+                        <option value="Korea, North">Korea North</option>
+                        <option value="Korea, South">Korea South</option>
                         <option value="Kosovo">Kosovo</option>
                         <option value="Kuwait">Kuwait</option>
                         <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -188,7 +189,6 @@
                         <option value="Montenegro">Montenegro</option>
                         <option value="Morocco">Morocco</option>
                         <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar, {Burma}">Myanmar, {Burma}</option>
                         <option value="Namibia">Namibia</option>
                         <option value="Nauru">Nauru</option>
                         <option value="Nepal">Nepal</option>
@@ -212,7 +212,6 @@
                         <option value="Romania">Romania</option>
                         <option value="Russian Federation">Russian Federation</option>
                         <option value="Rwanda">Rwanda</option>
-                        <option value="St Kitts & Nevis">St Kitts & Nevis</option>
                         <option value="St Lucia">St Lucia</option>
                         <option value="Saint Vincent & the Grenadines">Saint Vincent & the Grenadines</option>
                         <option value="Samoa">Samoa</option>

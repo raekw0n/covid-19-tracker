@@ -28,6 +28,8 @@ class StatisticsController extends Controller
     /**
      * Fetch statistics.
      *
+     * @param Request $request
+     * @param Response $response
      * @return mixed
      */
     public function fetch(Request $request, Response $response)
@@ -48,11 +50,13 @@ class StatisticsController extends Controller
     /**
      * Update statistics.
      *
-     * @param array $data
+     * @param Response $response
      * @return mixed
      */
     public function update(Response $response)
     {
+        $this->auth->require();
+
         $data = $this->api->call('stats')->data->covid19Stats;
 
         $recorded = 0;

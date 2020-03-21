@@ -20,6 +20,8 @@ abstract class Controller
 
     protected $api;
 
+    protected $auth;
+
     /** @var mixed $router */
     protected $router;
 
@@ -36,6 +38,7 @@ abstract class Controller
         $this->log = $container['log'];
         $this->db  = $container['db'];
         $this->api = $container['api'];
+        $this->auth = $container['auth'];
         $this->router = $container['router'];
 
         $this->data['title'] = env("APP_NAME");
