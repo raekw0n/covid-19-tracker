@@ -1,0 +1,27 @@
+{
+    "name": "raekw0n/harley",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Rowles",
+            "email": "me@rowles.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Covid\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "require": {
+        "raekw0n/danielle": "dev-master",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "symfony/var-dumper": "^4.3"
+    }
+}
