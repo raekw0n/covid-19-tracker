@@ -34,18 +34,6 @@ class Statistics extends Model
     protected $post;
 
     /**
-     * Get all posts.
-     *
-     * @return mixed
-     */
-    public function getAllStatistics()
-    {
-        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
-                            FROM statistics ORDER BY confirmed DESC;');
-        return $this->db->resultset();
-    }
-
-    /**
      * Save blog post.
      *
      * @return bool
@@ -72,6 +60,35 @@ class Statistics extends Model
         }
 
         return true;
+    }
+
+    /**
+     * Get all posts.
+     *
+     * @return mixed
+     */
+    public function getAllStatistics()
+    {
+        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
+                            FROM statistics ORDER BY confirmed DESC;');
+        return $this->db->resultset();
+    }
+
+    public function getTotals(array $statistics)
+    {
+        $totals = [
+            'confirmed' => 0,
+            'deaths' => 0,
+            'recovered' => 0,
+        ];
+
+        foreach($statistics as $key => $country) {
+            $totals['confirmed'] += $country['confirmed'];
+            $totals['deaths'] += $country['deaths'];
+            $totals['recovered'] += $country['recovered'];
+        }
+
+        return $totals;
     }
 
     /**
@@ -150,7 +167,7 @@ class Statistics extends Model
     /**
      * @return mixed
      */
-    public function getByConfirmed(string $op = '=', int $confirmed = 0)
+    public function getConfirmed()
     {
         return $this->confirmed;
     }

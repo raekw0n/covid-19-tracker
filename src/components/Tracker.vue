@@ -25,6 +25,41 @@
                 <hr>
             </div>
         </div>
+        <div class="row mb-3">
+            <div class="col-xl-4 col-sm-12 py-2">
+                <div class="card bg-success text-white h-100">
+                    <div class="card-body bg-secondary">
+                        <div class="rotate">
+                            <i class="fa fa-user fa-4x"></i>
+                        </div>
+                        <h6 class="text-uppercase">Cases</h6>
+                        <h1 class="display-4">{{ this.total_cases.toLocaleString() }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12 py-2">
+                <div class="card text-white bg-danger h-100">
+                    <div class="card-body bg-danger">
+                        <div class="rotate">
+                            <i class="fa fa-list fa-4x"></i>
+                        </div>
+                        <h6 class="text-uppercase">Deaths</h6>
+                        <h1 class="display-4">{{ this.total_deaths.toLocaleString() }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12 py-2">
+                <div class="card text-white bg-info h-100">
+                    <div class="card-body bg-success">
+                        <div class="rotate">
+                            <i class="fa fa-twitter fa-4x"></i>
+                        </div>
+                        <h6 class="text-uppercase">Recovered</h6>
+                        <h1 class="display-4">{{ this.total_recovered.toLocaleString() }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="filters">
             <div class="mt-2">
                 <form class="form-inline">
@@ -232,7 +267,7 @@
 
                     <label for="province" class="sr-only">Province:</label>
                     <input class="form-control mb-2 mr-sm-2" id="province" v-model="province" name="province"
-                           type="search" placeholder="e.g. Washington" @keyup.enter="get($event)">
+                           type="search" placeholder="Enter province..." @keyup.enter="get($event)">
                     <button type="submit" class="mb-2 btn btn-secondary"
                             v-on:click="get($event)">Search</button>
                 </form>
@@ -285,6 +320,9 @@
                 stats: [],
                 country: '',
                 province: '',
+                total_cases: 0,
+                total_deaths: 0,
+                total_recovered: 0,
                 sortKey: ['country'],
                 sortOrder: ['asc'],
             }
@@ -314,7 +352,11 @@
                 });
                 this.$http.get('https://covid-19-api.tracker.rowles.ch/statistics' + this.params, {
                 }).then((response) => {
+                    console.log(response);
                     this.stats = response.data.data;
+                    this.total_cases = response.data.totals.confirmed;
+                    this.total_deaths = response.data.totals.deaths;
+                    this.total_recovered = response.data.totals.recovered;
                     history.pushState("", "", this.params)
                 });
             }
