@@ -17,5 +17,6 @@ npm run serve
 npm run build
 ```
 
-Data provided by Johns Hopkins University.
-API provided by Weedmark Systems.
+## Credits
+- Data provided by Johns Hopkins University.
+- API provided by Weedmark Systems.
