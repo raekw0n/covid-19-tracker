@@ -26,41 +26,6 @@
                 <hr>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card bg-success text-white h-100">
-                    <div class="card-body bg-secondary">
-                        <div class="rotate">
-                            <i class="fa fa-user fa-4x"></i>
-                        </div>
-                        <h6 class="text-uppercase">Confirmed Cases</h6>
-                        <h1 class="display-4">{{ this.total_cases.toLocaleString() }}</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card text-white bg-danger h-100">
-                    <div class="card-body bg-danger">
-                        <div class="rotate">
-                            <i class="fa fa-list fa-4x"></i>
-                        </div>
-                        <h6 class="text-uppercase">Deaths</h6>
-                        <h1 class="display-4">{{ this.total_deaths.toLocaleString() }}</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card text-white bg-info h-100">
-                    <div class="card-body bg-success">
-                        <div class="rotate">
-                            <i class="fa fa-twitter fa-4x"></i>
-                        </div>
-                        <h6 class="text-uppercase">Recovered</h6>
-                        <h1 class="display-4">{{ this.total_recovered.toLocaleString() }}</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="filters">
             <div class="mt-2">
                 <form class="form-inline">
@@ -118,9 +83,6 @@
             return {
                 stats: [],
                 country: '',
-                total_cases: 0,
-                total_deaths: 0,
-                total_recovered: 0,
                 sortKey: ['country'],
                 sortOrder: ['asc'],
             }
@@ -143,11 +105,6 @@
                 }
             },
             get(event) {
-                for (let i=0; i<this.stats.length; ++i) {
-                    this.total_cases += this.stats[i].confirmed;
-                    this.total_deaths += this.stats[i].deaths;
-                    this.total_recovered += this.stats[i].recovered;
-                }
                 if (event) event.preventDefault();
                 this.params = this.$root.buildQueryString({
                     country: this.country
