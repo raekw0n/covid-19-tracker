@@ -6,26 +6,67 @@ use Exception;
 
 class Collection
 {
+    /** @var array $items */
     private $items = [];
 
+    /**
+     * Create a new collection instance.
+     *
+     * @param $collection
+     * @param $object
+     * @param $name
+     * @return Collection|null
+     */
+    public function collect(Collection $collection, $object, $name)
+    {
+        foreach ($object as $key => $obj) {
+            try {
+                $collection->add($obj, $obj[$name]);
+            } catch (\Exception $e) {
+                app('log')->error($e->getMessage());
+                return null;
+            }
+        }
+
+        return $collection;
+    }
+
+    /**
+     * Return all keys in the collection.
+     *
+     * @return array
+     */
     public function keys() {
         return array_keys($this->items);
     }
 
+    /**
+     * Return an item by key in the collection.
+     *
+     * @param $key
+     * @return bool
+     */
+    public function key($key) {
+        return $this->items[$key];
+    }
+
+    /**
+     * Return the length of the collection.
+     *
+     * @return int
+     */
     public function length() {
         return count($this->items);
     }
 
-    public function keyExists($key) {
-        return isset($this->items[$key]);
-    }
-
     /**
+     * Add an item to the collection.
+     *
      * @param $obj
      * @param null $key
      * @throws Exception
      */
-    public function addItem($obj, $key = null) {
+    public function add($obj, $key = null) {
         if ($key == null) {
             $this->items[] = $obj;
         }
@@ -40,10 +81,12 @@ class Collection
     }
 
     /**
+     * Remove an item from the collection.
+     *
      * @param $key
      * @throws Exception
      */
-    public function deleteItem($key) {
+    public function remove($key) {
         if (isset($this->items[$key])) {
             unset($this->items[$key]);
         } else {
@@ -52,11 +95,23 @@ class Collection
     }
 
     /**
+     * Return all items in the collection.
+     *
+     * @return mixed
+     */
+    public function items()
+    {
+        return $this->items;
+    }
+
+    /**
+     * Get an item from the collection.
+     *
      * @param $key
      * @return mixed
      * @throws Exception
      */
-    public function getItem($key) {
+    public function item($key) {
         if (isset($this->items[$key])) {
             return $this->items[$key];
         }

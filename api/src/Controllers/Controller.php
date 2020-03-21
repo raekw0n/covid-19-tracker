@@ -4,6 +4,7 @@ namespace Covid\Controllers;
 
 use Pimple\Container;
 use Danielle\Traits\AjaxDetector;
+use Covid\Models\CollectionFactory;
 
 /**
  * Abstract base controller class.
@@ -40,5 +41,10 @@ abstract class Controller
         $this->router = $container['router'];
 
         $this->data['title'] = env("APP_NAME");
+    }
+
+    public function collect($object, $name = 'id')
+    {
+        return CollectionFactory::create($object, $name);
     }
 }

@@ -67,7 +67,7 @@ class Statistics extends Model
         $collection = new Collection();
         foreach ($data as $key => $stat) {
             try {
-                $collection->addItem($stat, $stat['id']);
+                $collection->add($stat, $stat['id']);
             } catch (\Exception $e) {
                 app('log')->error($e->getMessage());
                 return null;
@@ -89,6 +89,12 @@ class Statistics extends Model
         return $this->db->resultset();
     }
 
+    /**
+     * Get totals.
+     *
+     * @param array $statistics
+     * @return array
+     */
     public function getTotals(array $statistics)
     {
         $totals = [
