@@ -128,9 +128,15 @@ class Statistics extends Model
     /**
      * @return mixed
      */
-    public function getProvince()
+    public function getByProvince(string $province)
     {
-        return $this->province;
+        $this->setProvince($province);
+
+        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
+                            FROM statistics WHERE province RLIKE :province ORDER BY confirmed DESC;');
+        $this->db->bind(':province', $this->province);
+
+        return $this->db->resultset();
     }
 
     /**
@@ -144,7 +150,7 @@ class Statistics extends Model
     /**
      * @return mixed
      */
-    public function getConfirmed()
+    public function getByConfirmed(string $op = '=', int $confirmed = 0)
     {
         return $this->confirmed;
     }

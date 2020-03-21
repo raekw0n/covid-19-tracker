@@ -32,10 +32,13 @@ class StatisticsController extends Controller
      */
     public function fetch(Request $request, Response $response)
     {
-        $country = $request->param('country');
+        $country  = $request->param('country');
+        $province = $request->param('province');
 
         if ($country) {
             return $response->json(['data' => $this->model->getByCountry($country)]);
+        } else if ($province) {
+            return $response->json(['data' => $this->model->getByprovince($province)]);
         }
 
         return $response->json(['data' => $this->model->getAllStatistics()]);
