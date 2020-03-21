@@ -57,15 +57,11 @@ class StatisticsController extends Controller
     {
         $data = $this->api->call('stats')->data->covid19Stats;
 
-        $recorded = 0;
-        $total = count($data);
         foreach ($data as $country) {
             $this->model->setAttributes(toArray($country));
-            if ($this->model->save()) {
-                ++$recorded;
-            }
+            $this->model->save();
         }
 
-        return $response->json(['total' => $total, 'imported' => $recorded]);
+        return $response->json(['data' => $data]);
     }
 }

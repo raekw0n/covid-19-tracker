@@ -43,6 +43,13 @@ abstract class Controller
         $this->data['title'] = env("APP_NAME");
     }
 
+    /**
+     * Create collections.
+     *
+     * @param $object
+     * @param string $name
+     * @return \Covid\Models\Collection|null
+     */
     public function collect($object, $name = 'id')
     {
         return CollectionFactory::create($object, $name);

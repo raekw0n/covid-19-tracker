@@ -34,51 +34,63 @@ class Statistics extends Model
     protected $post;
 
     /**
-     * Save blog post.
+     * Save statistics.
      *
      * @return bool
      */
     public function save()
     {
-        try {
-            $this->db->query(
-                'INSERT INTO statistics (country, province, confirmed, deaths, recovered, last_updated) 
-                VALUES (:country, :province, :confirmed, :deaths, :recovered, :last_updated)'
-            );
+        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
+                            FROM statistics WHERE country = :country AND province = :province');
+        $this->db->bind(':country', $this->country);
+        $this->db->bind(':province', $this->province);
+        $check = $this->db->single();
 
-            $this->db->bind(':country', $this->country);
-            $this->db->bind(':province', $this->province);
-            $this->db->bind(':confirmed', $this->confirmed);
-            $this->db->bind(':deaths', $this->deaths);
-            $this->db->bind(':recovered', $this->recovered);
-            $this->db->bind(':last_updated', $this->last_updated);
+        if ($check && $this->country === $check['country'] && $this->province === $check['province']) {
+            try {
+                $this->db->query(
+                    'UPDATE statistics SET confirmed = :confirmed, deaths = :deaths, recovered = :recovered, last_updated = :last_updated
+                    WHERE country = :country AND province = :province'
+                );
 
-            $this->db->execute();
-        } catch (\Exception $e) {
-            $this->log->error($e->getMessage());
-            return false;
+                $this->db->bind(':confirmed', $this->confirmed);
+                $this->db->bind(':deaths', $this->deaths);
+                $this->db->bind(':recovered', $this->recovered);
+                $this->db->bind(':last_updated', $this->last_updated);
+                $this->db->bind(':country', $this->country);
+                $this->db->bind(':province', $this->province);
+
+                $this->db->execute();
+            } catch (\Exception $e) {
+                $this->log->error($e->getMessage());
+                return false;
+            }
+        } else {
+            try {
+                $this->db->query(
+                    'INSERT INTO statistics (country, province, confirmed, deaths, recovered, last_updated) 
+                        VALUES (:country, :province, :confirmed, :deaths, :recovered, :last_updated)'
+                );
+
+                $this->db->bind(':country', $this->country);
+                $this->db->bind(':province', $this->province);
+                $this->db->bind(':confirmed', $this->confirmed);
+                $this->db->bind(':deaths', $this->deaths);
+                $this->db->bind(':recovered', $this->recovered);
+                $this->db->bind(':last_updated', $this->last_updated);
+
+                $this->db->execute();
+            } catch (\Exception $e) {
+                $this->log->error($e->getMessage());
+                return false;
+            }
         }
 
         return true;
     }
 
-    public function collect($data)
-    {
-        $collection = new Collection();
-        foreach ($data as $key => $stat) {
-            try {
-                $collection->add($stat, $stat['id']);
-            } catch (\Exception $e) {
-                app('log')->error($e->getMessage());
-                return null;
-            }
-        }
-
-        return $collection;
-    }
-
     /**
-     * Get all posts.
+     * Get all statistics.
      *
      * @return mixed
      */
