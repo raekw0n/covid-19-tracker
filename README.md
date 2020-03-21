@@ -17,10 +17,5 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Data provided by Johns Hopkins University.
+API provided by Weedmark Systems.
