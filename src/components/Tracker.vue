@@ -152,23 +152,11 @@
                 this.params = this.$root.buildQueryString({
                     country: this.country
                 });
-                this.$http.get('http://api.covid-19.local/statistics', {
+                this.$http.get('http://api.covid-19.local/statistics' + this.params, {
                 }).then((response) => {
                     this.stats = response.data.data;
-                    console.log(this.stats);
                     history.pushState("", "", this.params)
                 });
-            },
-            search(event) {
-                event.preventDefault();
-                let results = [];
-                for (let i=0; i < this.stats.length; i++) {
-                    if (this.stats[i].country === this.country) {
-                        results.push(this.stats[i]);
-                    }
-                }
-                this.stats = results;
-                console.log(this.stats);
             }
         }
     }

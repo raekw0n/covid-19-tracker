@@ -2,9 +2,10 @@
 
 namespace Covid\Controllers;
 
-use Covid\Models\Statistics;
+use Klein\Request;
 use Klein\Response;
 use Pimple\Container;
+use Covid\Models\Statistics;
 
 class StatisticsController extends Controller
 {
@@ -29,8 +30,14 @@ class StatisticsController extends Controller
      *
      * @return mixed
      */
-    public function fetch(Response $response)
+    public function fetch(Request $request, Response $response)
     {
+        $country = $request->param('country');
+
+        if ($country) {
+            return $response->json(['data' => $this->model->getByCountry($country)]);
+        }
+
         return $response->json(['data' => $this->model->getAllStatistics()]);
     }
 
@@ -53,6 +60,6 @@ class StatisticsController extends Controller
             }
         }
 
-        return $response->json(['records' => $recorded, 'total' => $total]);
+        return $response->json(['total' => $total, 'imported' => $recorded]);
     }
 }

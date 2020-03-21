@@ -106,15 +106,21 @@ class Statistics extends Model
     /**
      * @return mixed
      */
-    public function getCountry()
+    public function getByCountry(string $country)
     {
-        return $this->country;
+        $this->setCountry($country);
+
+        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
+                            FROM statistics WHERE country RLIKE :country ORDER BY confirmed DESC;');
+        $this->db->bind(':country', $this->country);
+
+        return $this->db->resultset();
     }
 
     /**
      * @param mixed $country
      */
-    public function setCountry($country)
+    public function setCountry(string $country)
     {
         $this->country = $country;
     }
