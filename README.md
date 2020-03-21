@@ -1,4 +1,6 @@
-# covid-19
+# Worldwide COVID-19 statistics.
+
+http://covid-19.tracker.rowles.ch/
 
 ## Project setup
 ```
