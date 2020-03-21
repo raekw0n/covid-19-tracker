@@ -19,8 +19,7 @@
                     this website or API for medical guidance or use of this website or API in commerce is strictly
                     prohibited.
                 </p>
-                <a class="mr-3" href="https://covid19-api.weedmark.systems/api/v1/stats">Weedmark Systems</a>
-                <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkins CSSE</a>
+                <small class="text-muted">(Data source: <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkins CSSE</a>)</small>
                 <br />
                 <small class="text-muted">(Last updated: {{ '2020-03-21T17:02:34'|formatDate }})</small>
                 <hr>
@@ -109,7 +108,7 @@
                 this.params = this.$root.buildQueryString({
                     country: this.country
                 });
-                this.$http.get('http://api.covid-19.local/statistics' + this.params, {
+                this.$http.get('https://covid-19-api.tracker.rowles.ch/statistics' + this.params, {
                 }).then((response) => {
                     this.stats = response.data.data;
                     history.pushState("", "", this.params)
