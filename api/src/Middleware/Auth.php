@@ -1,11 +1,11 @@
 <?php
 
-namespace Covid\Api;
+namespace Covid\Middleware;
 
 /**
  * Class Auth
  */
-class Auth extends Api
+class Auth
 {
     /**
      * Basic Authentication.

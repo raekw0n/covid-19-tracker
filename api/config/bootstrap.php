@@ -18,6 +18,7 @@ $app->register(new Danielle\Providers\RouteServiceProvider());
 
 /** custom providers */
 $app->register(new Covid\Providers\ApiServiceProvider());
+$app->register(new Covid\Providers\MiddlewareServiceProvider());
 
 /**
  * boot method to fetch services from the container

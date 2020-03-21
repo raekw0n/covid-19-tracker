@@ -2,24 +2,24 @@
 
 namespace Covid\Providers;
 
-use Covid\Api\Caller;
 use Pimple\Container;
+use Covid\Middleware\Auth;
 use Pimple\ServiceProviderInterface;
 
 /**
  * Class ApiServiceProvider
  */
-class ApiServiceProvider implements ServiceProviderInterface
+class MiddlewareServiceProvider implements ServiceProviderInterface
 {
     /**
-     * Register api service provider.
+     * Register middleware service provider.
      *
      * @param Container $container
      * @return Container|string
      */
     public function register(Container $container)
     {
-        $container['api'] = new Caller();
+        $container['auth'] = new Auth();
 
         return $container;
     }

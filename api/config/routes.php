@@ -10,5 +10,6 @@ $app['router']->get('/statistics', function ($request, $response) use ($statisti
 });
 
 $app['router']->get('/update', function ($request, $response) use ($statistics) {
+    app('auth')->require();
     return $statistics->update($response);
 });
