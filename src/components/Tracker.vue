@@ -30,7 +30,10 @@
                 <form class="form-inline">
                     <label for="country" class="sr-only">Country:</label>
                     <input class="form-control mb-2 mr-sm-2" id="country" v-model="country" name="country"
-                           type="search" placeholder="e.g. United Kingdom" @keyup.enter="get($event)">
+                           type="search" placeholder="e.g. United States" @keyup.enter="get($event)">
+                    <label for="province" class="sr-only">Province:</label>
+                    <input class="form-control mb-2 mr-sm-2" id="province" v-model="province" name="province"
+                           type="search" placeholder="e.g. Washington" @keyup.enter="get($event)">
                     <button type="submit" class="mb-2 btn btn-secondary"
                             v-on:click="get($event)">Search</button>
                 </form>
@@ -82,6 +85,7 @@
             return {
                 stats: [],
                 country: '',
+                province: '',
                 sortKey: ['country'],
                 sortOrder: ['asc'],
             }
@@ -106,7 +110,8 @@
             get(event) {
                 if (event) event.preventDefault();
                 this.params = this.$root.buildQueryString({
-                    country: this.country
+                    country: this.country,
+                    province: this.province
                 });
                 this.$http.get('https://covid-19-api.tracker.rowles.ch/statistics' + this.params, {
                 }).then((response) => {
