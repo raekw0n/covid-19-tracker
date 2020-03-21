@@ -1,4 +1,12 @@
-# covid-19
+# Worldwide COVID-19 statistics.
+
+#### Website
+
+https://covid-19.tracker.rowles.ch/
+
+#### API
+
+https://covid-19-api.tracker.rowles.ch/statistics
 
 ## Project setup
 ```
@@ -15,10 +23,7 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Credits
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Data provided by Johns Hopkins University.
+
