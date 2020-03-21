@@ -62,6 +62,21 @@ class Statistics extends Model
         return true;
     }
 
+    public function collect($data)
+    {
+        $collection = new Collection();
+        foreach ($data as $key => $stat) {
+            try {
+                $collection->addItem($stat, $stat['id']);
+            } catch (\Exception $e) {
+                app('log')->error($e->getMessage());
+                return null;
+            }
+        }
+
+        return $collection;
+    }
+
     /**
      * Get all posts.
      *
