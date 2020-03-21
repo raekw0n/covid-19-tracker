@@ -55,8 +55,6 @@ class StatisticsController extends Controller
      */
     public function update(Response $response)
     {
-        $this->auth->require();
-
         $data = $this->api->call('stats')->data->covid19Stats;
 
         $recorded = 0;
