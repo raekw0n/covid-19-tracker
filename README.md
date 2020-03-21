@@ -6,7 +6,7 @@ https://covid-19.tracker.rowles.ch/
 
 #### API
 
-https://covid-19-api.tracker.rowles.ch/
+https://covid-19-api.tracker.rowles.ch/statistics
 
 ## Project setup
 ```
