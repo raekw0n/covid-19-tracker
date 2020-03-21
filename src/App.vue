@@ -11,8 +11,6 @@
         name: 'App',
         components: {
             Tracker
-        },
-        methods: {
         }
     }
 </script>
