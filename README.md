@@ -1,6 +1,12 @@
 # Worldwide COVID-19 statistics.
 
-http://covid-19.tracker.rowles.ch/
+#### Website
+
+https://covid-19.tracker.rowles.ch/
+
+#### API
+
+https://covid-19-api.tracker.rowles.ch/
 
 ## Project setup
 ```
@@ -18,5 +24,6 @@ npm run build
 ```
 
 ## Credits
-- Data provided by Johns Hopkins University.
-- API provided by Weedmark Systems.
+
+Data provided by Johns Hopkins University.
+
