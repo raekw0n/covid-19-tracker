@@ -3,13 +3,20 @@
 namespace Covid\Controllers;
 
 use Covid\Models\Statistics;
+use Klein\Response;
 use Pimple\Container;
 
 class StatisticsController extends Controller
 {
 
+    /** @var Statistics $model */
     protected $model;
 
+    /**
+     * StatisticsController constructor.
+     *
+     * @param Container $container
+     */
     public function __construct(Container $container)
     {
         $this->model = new Statistics($container);
@@ -17,7 +24,23 @@ class StatisticsController extends Controller
         parent::__construct($container);
     }
 
-    public function get(array $data = [])
+    /**
+     * Fetch statistics.
+     *
+     * @return mixed
+     */
+    public function fetch(Response $response)
+    {
+        return $response->json(['data' => $this->model->getAllStatistics()]);
+    }
+
+    /**
+     * Update statistics.
+     *
+     * @param array $data
+     * @return mixed
+     */
+    public function update(Response $response)
     {
         $data = $this->api->call('stats')->data->covid19Stats;
 
@@ -30,6 +53,6 @@ class StatisticsController extends Controller
             }
         }
 
-        return json_encode(['records' => $recorded, 'total' => $total]);
+        return $response->json(['records' => $recorded, 'total' => $total]);
     }
 }

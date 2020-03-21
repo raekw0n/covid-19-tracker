@@ -38,10 +38,10 @@ class Statistics extends Model
      *
      * @return mixed
      */
-    public function fetch()
+    public function getAllStatistics()
     {
         $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
-                            FROM statistics ORDER BY created_at DESC;');
+                            FROM statistics ORDER BY confirmed DESC;');
         return $this->db->resultset();
     }
 
@@ -82,6 +82,10 @@ class Statistics extends Model
      */
     public function setAttributes(array $data)
     {
+        if (is_null($data['province']) || $data['province'] === '') {
+           $data['province'] = $data['country'];
+        }
+
         try {
             $this->setCountry($data['country']);
             $this->setProvince($data['province']);
