@@ -45,9 +45,9 @@
                 <tr v-for="stat in sorted" v-bind:key="stat.country + '_' + stat.province">
                     <td>{{ stat.country }}</td>
                     <td>{{ stat.province }}</td>
-                    <td class="text-success">{{ stat.confirmed }}</td>
+                    <td>{{ stat.confirmed }}</td>
                     <td class="text-danger">{{ stat.deaths }}</td>
-                    <td>{{ stat.recovered }}</td>
+                    <td class="text-success">{{ stat.recovered }}</td>
                     <td>{{ stat.lastUpdate|formatDate }}</td>
                 </tr>
                 </tbody>
