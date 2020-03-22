@@ -97,6 +97,7 @@
                         </tr>
                         </thead>
                         <tbody id="live-table">
+                        <tr v-if="sorted.length === 0"><td colspan="6">No Results...</td></tr>
                         <tr v-for="stat in sorted" v-bind:key="stat.id">
                             <td>{{ stat.country }}</td>
                             <td>{{ stat.province }}</td>
