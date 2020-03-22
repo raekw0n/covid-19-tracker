@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueGtag from "vue-gtag";
 import App from './App.vue';
 import axios from 'axios';
 import moment from 'moment';
@@ -23,6 +24,10 @@ Vue.filter('formatDate', value => {
     if (value) {
         return moment(value, 'YYYY-MM-DD HH:mm:ss').format('lll');
     }
+});
+
+Vue.use(VueGtag, {
+    config: { id: "UA-147973519-3" }
 });
 
 new Vue({
