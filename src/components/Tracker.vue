@@ -1,24 +1,10 @@
 <template>
-    <div class="container-fluid p-4">
+    <div class="container-fluid pt-4 px-4">
         <div class="row">
             <div class="col-md-12">
                 <a href="/" class="text-dark">
-                    <h1 class="heading">COVID-19</h1>
+                    <h1 class="heading">COVID-19 Statistics</h1>
                 </a>
-                <a class="nav-link" href="https://github.com/raekw0n/covid-19-tracker">
-                    <font-awesome-icon class="my-2 text-dark" size="2x" :icon="['fab', 'github']"/>
-                </a>
-                <hr>
-                <p class="text-muted">
-                    The data this API serves including all data, mapping, and analysis, copyright 2020 Johns Hopkins
-                    University, all rights reserved, is provided to the public strictly for educational and academic
-                    research purposes. The Website relies upon publicly available data from multiple sources, that do
-                    not always agree. Weedmark Systems (the author of the API this website consumes) and The Johns Hopkins University (the
-                    author of the data provided by this API) hereby disclaims any and all representations and warranties
-                    with respect to this website, including accuracy, fitness for use, and merchantability. Reliance on
-                    this website or API for medical guidance or use of this website or API in commerce is strictly
-                    prohibited.
-                </p>
                 <small class="text-muted">(Data source: <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkins CSSE</a>)</small>
                 <br />
                 <small class="text-muted">(Last updated: {{ '2020-03-21T17:02:34'|formatDate }})</small>
@@ -27,30 +13,31 @@
         </div>
         <div class="row">
             <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card bg-success text-white h-100">
-                    <div class="card-body bg-secondary">
+                <div class="h-100">
+                    <div class="text-dark">
                         <h6 class="text-uppercase">Cases</h6>
                         <h1 class="display-4">{{ this.total_cases.toLocaleString() }}</h1>
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card text-white bg-danger h-100">
-                    <div class="card-body bg-danger">
+                <div class="h-100">
+                    <div class="text-danger">
                         <h6 class="text-uppercase">Deaths</h6>
                         <h1 class="display-4">{{ this.total_deaths.toLocaleString() }}</h1>
                     </div>
                 </div>
             </div>
             <div class="col-xl-4 col-sm-12 py-2">
-                <div class="card text-white bg-info h-100">
-                    <div class="card-body bg-success">
+                <div class="h-100">
+                    <div class="text-success">
                         <h6 class="text-uppercase">Recovered</h6>
                         <h1 class="display-4">{{ this.total_recovered.toLocaleString() }}</h1>
                     </div>
                 </div>
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-md-12">
                 <div id="filters">
@@ -348,6 +335,21 @@
                         </nav>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <p class="text-muted small">
+                    The data this API serves including all data, mapping, and analysis, copyright 2020 Johns Hopkins
+                    University, all rights reserved, is provided to the public strictly for educational and academic
+                    research purposes. The Website relies upon publicly available data from multiple sources, that do
+                    not always agree. Weedmark Systems (the author of the API this website consumes) and The Johns Hopkins University (the
+                    author of the data provided by this API) hereby disclaims any and all representations and warranties
+                    with respect to this website, including accuracy, fitness for use, and merchantability. Reliance on
+                    this website or API for medical guidance or use of this website or API in commerce is strictly
+                    prohibited.
+                </p>
             </div>
         </div>
     </div>
