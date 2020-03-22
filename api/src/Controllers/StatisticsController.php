@@ -2,7 +2,6 @@
 
 namespace Covid\Controllers;
 
-use Covid\Config;
 use Klein\Request;
 use Klein\Response;
 use Pimple\Container;
@@ -26,6 +25,12 @@ class StatisticsController extends Controller
         parent::__construct($container);
     }
 
+    /**
+     * Return API info.
+     *
+     * @param Response $response
+     * @return Response
+     */
     public function info(Response $response)
     {
         return $response->json([
@@ -33,6 +38,17 @@ class StatisticsController extends Controller
             'version' => '1.0.0',
             'last_updated' => $this->model->getLastUpdated()
         ]);
+    }
+
+    /**
+     * Return list of countries.
+     *
+     * @param Response $response
+     * @return Response
+     */
+    public function countries(Response $response)
+    {
+        return $response->json(['countries' => $this->model->getAllCountries()]);
     }
 
     /**

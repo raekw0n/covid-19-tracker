@@ -172,6 +172,17 @@ class Statistics extends Model
     }
 
     /**
+     * Get all countries.
+     *
+     * @return mixed
+     */
+    public function getAllCountries()
+    {
+        $this->db->query('SELECT `id`, `name` FROM countries ORDER BY `name`');
+        return $this->db->resultset();
+    }
+
+    /**
      * @return mixed
      */
     public function getByCountry(string $country)
