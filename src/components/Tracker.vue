@@ -54,7 +54,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="filters">
-                    <div class="mt-2">
+                    <div class="mt-2 w-100 d-flex justify-content-between">
                         <form class="form-inline">
                             <label for="country" class="sr-only">Country:</label>
                             <select class="form-control mb-2 mr-sm-2 custom-select" name="country"
@@ -256,13 +256,22 @@
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
-
                             <label for="province" class="sr-only">Province:</label>
                             <input class="form-control mb-2 mr-sm-2" id="province" v-model="province" name="province"
                                    type="search" placeholder="Enter province..." @keyup.enter="get($event)">
                             <button type="submit" class="mb-2 btn btn-secondary"
                                     v-on:click="get($event)">Search</button>
                         </form>
+                        <div class="d-inline-flex">
+                            <label for="limit" class="sr-only">Per Page:</label>
+                            <select name="limit" title="Per Page" class="form-control mb-2 mr-sm-2" id="limit"
+                                    v-model="limit" @change="get($event)">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,7 +328,7 @@
                             <ul class="pagination">
                                 <li class="page-item">
                                     <button type="button" class="page-link" @click="prevPage">
-                                        Previous
+                                        <font-awesome-icon :icon="['fas', 'caret-left']"></font-awesome-icon>
                                     </button>
                                 </li>
                                 <li class="page-item">
@@ -332,7 +341,7 @@
                                 </li>
                                 <li class="page-item">
                                     <button type="button" @click="nextPage" class="page-link">
-                                        Next
+                                        <font-awesome-icon :icon="['fas', 'caret-right']"></font-awesome-icon>
                                     </button>
                                 </li>
                             </ul>
@@ -435,6 +444,9 @@
     }
 
     button.page-link {
+        font-size: 0.95rem;
+        background-color: transparent;
+        border: none;
         display: inline-block;
         color: #2c3e50;
         font-weight: 500;
