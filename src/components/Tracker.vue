@@ -7,7 +7,7 @@
                 </a>
                 <small class="text-muted">(Data source: <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkins CSSE</a>)</small>
                 <br />
-                <small class="text-muted">(Last updated: {{ '2020-03-21T17:02:34'|formatDate }})</small>
+                <small class="text-muted">(Last updated: {{ this.last_updated|formatDate }})</small>
                 <hr>
             </div>
         </div>
@@ -366,6 +366,7 @@
                 total_cases: 0,
                 total_deaths: 0,
                 total_recovered: 0,
+                last_updated: '',
                 page: 1,
                 pages: 1,
                 limit: 10,
@@ -400,7 +401,6 @@
                 });
                 this.$http.get('http://api.covid-19.local/statistics' + this.params, {
                 }).then((response) => {
-                    console.log(response);
                     this.stats = response.data.data.items;
                     this.page = response.data.data.page;
                     this.limit = response.data.data.limit;
@@ -408,6 +408,7 @@
                     this.total_cases = response.data.totals.confirmed;
                     this.total_deaths = response.data.totals.deaths;
                     this.total_recovered = response.data.totals.recovered;
+                    this.last_updated = response.data.data.last_update;
                     history.pushState("", "", this.params)
                 });
             },

@@ -14,6 +14,7 @@
         }
     },
     "require": {
+        "php": "7.2",
         "raekw0n/danielle": "dev-master",
         "guzzlehttp/guzzle": "^6.5"
     },

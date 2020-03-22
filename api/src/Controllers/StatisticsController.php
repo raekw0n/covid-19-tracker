@@ -2,6 +2,7 @@
 
 namespace Covid\Controllers;
 
+use Covid\Config;
 use Klein\Request;
 use Klein\Response;
 use Pimple\Container;
@@ -27,7 +28,7 @@ class StatisticsController extends Controller
 
     public function info(Response $response)
     {
-         return $response->json([
+        return $response->json([
             'description' => 'Track worldwide COVID-19 statistics.',
             'version' => '1.0.0',
             'last_updated' => $this->model->getLastUpdated()
@@ -59,6 +60,7 @@ class StatisticsController extends Controller
             $request->param('page'),
             $request->param('limit')
         );
+        $data['last_update'] = $this->model->getLastUpdated();
 
         return $response->json(['totals' => $this->model->getTotals(), 'data' => $data]);
     }
