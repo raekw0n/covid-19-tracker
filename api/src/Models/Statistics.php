@@ -268,7 +268,8 @@ class Statistics extends Model
      */
     public function getLastUpdated()
     {
-        return $this->last_updated;
+        $this->db->query('SELECT last_updated FROM statistics ORDER BY last_updated DESC LIMIT 1');
+        return $this->db->single()['last_updated'];
     }
 
     /**

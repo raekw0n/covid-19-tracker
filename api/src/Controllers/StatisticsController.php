@@ -25,6 +25,15 @@ class StatisticsController extends Controller
         parent::__construct($container);
     }
 
+    public function info(Response $response)
+    {
+         return $response->json([
+            'description' => 'Track worldwide COVID-19 statistics.',
+            'version' => '1.0.0',
+            'last_updated' => $this->model->getLastUpdated()
+        ]);
+    }
+
     /**
      * Fetch statistics.
      *

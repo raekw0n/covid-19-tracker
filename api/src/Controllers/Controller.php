@@ -61,8 +61,10 @@ abstract class Controller
      * @param $limit
      * @return array
      */
-    public function paginate(Collection $collection, $page, $limit)
+    public function paginate(Collection $collection, $page, $limit = null)
     {
+        $limit = $limit ?? 10;
+
         return [
             'page'  => (int) $page,
             'limit' => (int) $limit,
