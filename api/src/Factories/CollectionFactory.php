@@ -1,6 +1,8 @@
 <?php
 
-namespace Covid\Models;
+namespace Covid\Factories;
+
+use Covid\Models\Collection;
 
 /**
  * Class CollectionFactory

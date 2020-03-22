@@ -298,6 +298,12 @@
                 </tr>
                 </tbody>
             </table>
+            <button @click="prevPage">
+                Previous
+            </button>
+            <button @click="nextPage">
+                Next
+            </button>
         </div>
     </div>
 </template>
@@ -313,6 +319,8 @@
                 total_cases: 0,
                 total_deaths: 0,
                 total_recovered: 0,
+                page: 1,
+                limit: 10,
                 sortKey: ['country'],
                 sortOrder: ['asc'],
             }
@@ -324,6 +332,15 @@
             sorted() {
                 return this.$_.orderBy(this.stats, this.sortKey, this.sortOrder);
             },
+            pageCount(){
+                return Math.ceil(this.listData.length / this.size);
+            },
+            paginatedData(){
+                const start = this.page * this.limit,
+                    end = start + this.limit;
+
+                return this.stats.slice(start, end);
+            }
         },
         methods: {
             sort(key) {
@@ -338,9 +355,11 @@
                 if (event) event.preventDefault();
                 this.params = this.$root.buildQueryString({
                     country: this.country,
-                    province: this.province
+                    province: this.province,
+                    page: this.page,
+                    limit: this.limit
                 });
-                this.$http.get('https://covid-19-api.tracker.rowles.ch/statistics' + this.params, {
+                this.$http.get('http://api.covid-19.local/statistics' + this.params, {
                 }).then((response) => {
                     console.log(response);
                     this.stats = response.data.data;
@@ -349,6 +368,14 @@
                     this.total_recovered = response.data.totals.recovered;
                     history.pushState("", "", this.params)
                 });
+            },
+            nextPage(){
+                this.page++;
+                this.get();
+            },
+            prevPage(){
+                this.page--;
+                this.get();
             }
         }
     }
@@ -362,5 +389,16 @@
 
     .text-amber {
         color: #ff8a37 !important;
+    }
+
+    .pagination {
+        display: inline-block;
+    }
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
     }
 </style>

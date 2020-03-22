@@ -43,8 +43,13 @@ class StatisticsController extends Controller
             return $response->json(['data' => $this->model->getByprovince($province)]);
         }
 
-        $statistics = $this->model->getAllStatistics();
-        return $response->json(['totals' => $this->model->getTotals($statistics), 'data' => $statistics]);
+        $statistics = $this->paginate(
+            $this->collect($this->model->getAllStatistics())->items(),
+            $request->param('page'),
+            $request->param('limit')
+        );
+
+        return $response->json(['totals' => $this->model->getTotals(), 'data' => $statistics]);
     }
 
     /**

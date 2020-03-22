@@ -25,6 +25,7 @@ Vue.filter('formatDate', value => {
 });
 
 new Vue({
+    el: '#app',
     render: h => h(App),
     methods: {
         buildQueryString(params) {
@@ -39,4 +40,4 @@ new Vue({
             return query;
         }
     }
-}).$mount('#app');
+});

@@ -107,8 +107,12 @@ class Statistics extends Model
      * @param array $statistics
      * @return array
      */
-    public function getTotals(array $statistics)
+    public function getTotals()
     {
+        $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
+                            FROM statistics ORDER BY confirmed DESC;');
+        $statistics = $this->db->resultset();
+
         $totals = [
             'confirmed' => 0,
             'deaths' => 0,

@@ -11,10 +11,7 @@
     "autoload": {
         "psr-4": {
             "Covid\\": "src/"
-        },
-        "files": [
-            "src/Helpers/functions.php"
-        ]
+        }
     },
     "require": {
         "raekw0n/danielle": "dev-master",

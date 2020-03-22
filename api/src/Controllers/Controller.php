@@ -3,16 +3,13 @@
 namespace Covid\Controllers;
 
 use Pimple\Container;
-use Danielle\Traits\AjaxDetector;
-use Covid\Models\CollectionFactory;
+use Covid\Factories\CollectionFactory;
 
 /**
  * Abstract base controller class.
  */
 abstract class Controller
 {
-    use AjaxDetector;
-
     /** @var mixed $log */
     protected $log;
 
@@ -53,5 +50,18 @@ abstract class Controller
     public function collect($object, $name = 'id')
     {
         return CollectionFactory::create($object, $name);
+    }
+
+    /**
+     * Paginate data.
+     *
+     * @param array $data
+     * @param $offset
+     * @param $limit
+     * @return array
+     */
+    public function paginate(array $data, $page, $limit)
+    {
+        return array_slice($data, (($page - 1) * $limit), $limit);
     }
 }
