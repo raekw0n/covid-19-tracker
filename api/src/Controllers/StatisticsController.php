@@ -44,7 +44,7 @@ class StatisticsController extends Controller
         }
 
         $statistics = $this->paginate(
-            $this->collect($this->model->getAllStatistics())->items(),
+            $this->model->getAllStatistics(),
             $request->param('page'),
             $request->param('limit')
         );

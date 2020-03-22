@@ -97,8 +97,22 @@ class Statistics extends Model
     public function getAllStatistics()
     {
         $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
-                            FROM statistics ORDER BY confirmed DESC;');
-        return $this->db->resultset();
+                            FROM statistics ORDER BY country;');
+
+        $data  = [];
+        foreach($this->db->resultset() as $key => $result) {
+            $data[] = [
+                "id" => $result['id'],
+                "country" => $result['country'],
+                "province" => $result['province'],
+                "confirmed" => (int) $result['confirmed'],
+                "deaths" => (int) $result['deaths'],
+                "recovered" => (int) $result['recovered'],
+                "last_updated" => $result['last_updated']
+            ];
+        }
+
+        return $data;
     }
 
     /**
