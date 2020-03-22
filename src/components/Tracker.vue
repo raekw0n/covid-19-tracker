@@ -297,9 +297,19 @@
                         <tr v-for="stat in sorted" v-bind:key="stat.id">
                             <td>{{ stat.country }}</td>
                             <td>{{ stat.province }}</td>
-                            <td :class="{ 'text-muted': stat.confirmed <= 100, 'text-amber': stat.confirmed > 100 && stat.confirmed <= 1000, 'text-danger': stat.confirmed > 1000  }">{{ stat.confirmed.toLocaleString() }}</td>
-                            <td :class="{ 'text-muted': stat.deaths === 0, 'text-danger': stat.deaths > 0 }">{{ stat.deaths.toLocaleString() }}</td>
-                            <td :class="{ 'text-muted': stat.recovered === 0, 'text-success': stat.recovered > 0 }">{{ stat.recovered.toLocaleString() }}</td>
+                            <td :class="{
+                                'text-muted': stat.confirmed <= 100,
+                                'text-amber': stat.confirmed > 100 && stat.confirmed <= 1000,
+                                'text-danger': stat.confirmed > 1000  }">{{ stat.confirmed.toLocaleString() }}
+                            </td>
+                            <td :class="{
+                                'text-muted': stat.deaths === 0,
+                                'text-danger': stat.deaths > 0 }">{{ stat.deaths.toLocaleString() }}
+                            </td>
+                            <td :class="{
+                                'text-muted': stat.recovered === 0,
+                                'text-success': stat.recovered > 0 }">{{ stat.recovered.toLocaleString() }}
+                            </td>
                             <td>{{ stat.last_updated|formatDate }}</td>
                         </tr>
                         </tbody>
@@ -379,6 +389,7 @@
                 });
                 this.$http.get('http://api.covid-19.local/statistics' + this.params, {
                 }).then((response) => {
+                    console.log(response);
                     this.stats = response.data.data.items;
                     this.page = response.data.data.page;
                     this.limit = response.data.data.limit;
@@ -425,16 +436,13 @@
 
     button.page-link {
         display: inline-block;
+        color: #2c3e50;
+        font-weight: 500;
 
         &.active {
             background: #2c3e50;
             color: white;
         }
-    }
-
-    button.page-link {
-        color: #2c3e50;
-        font-weight: 500;
     }
 
     .offset{

@@ -38,14 +38,15 @@ class StatisticsController extends Controller
         $province = $request->param('province');
 
         if ($country) {
-            return $response->json(['totals' => $this->model->getTotals(), 'data' => $this->model->getByCountry($country)]);
+            $statistics =  $this->model->getByCountry($country);
         } else if ($province) {
-            return $response->json(['totals' => $this->model->getTotals(), 'data' => $this->model->getByprovince($province)]);
+            $statistics =  $this->model->getByProvince($province);
+        } else {
+            $statistics = $this->model->getAllStatistics();
         }
 
-        $collection = $this->collect($this->model->getAllStatistics());
         $data = $this->paginate(
-            $collection->items(),
+            $this->collect($statistics),
             $request->param('page'),
             $request->param('limit')
         );

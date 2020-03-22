@@ -2,6 +2,7 @@
 
 namespace Covid\Controllers;
 
+use Covid\Models\Collection;
 use Pimple\Container;
 use Covid\Factories\CollectionFactory;
 
@@ -60,13 +61,13 @@ abstract class Controller
      * @param $limit
      * @return array
      */
-    public function paginate(array $data, $page, $limit)
+    public function paginate(Collection $collection, $page, $limit)
     {
         return [
             'page'  => (int) $page,
             'limit' => (int) $limit,
-            'pages' => (int) ceil(count($data) / $limit),
-            'items' => array_slice($data, (($page - 1) * $limit), $limit),
+            'pages' => (int) ceil($collection->length() / $limit),
+            'items' => array_slice($collection->items(), (($page - 1) * $limit), $limit),
         ];
     }
 }
