@@ -249,7 +249,7 @@
                             <button type="submit" class="mb-2 btn btn-secondary"
                                     v-on:click="get($event)">Search</button>
                         </form>
-                        <div class="d-inline-flex">
+                        <div class="d-none d-sm-inline-flex">
                             <label for="limit" class="sr-only">Per Page:</label>
                             <select name="limit" title="Per Page" class="form-control mb-2 mr-sm-2" id="limit"
                                     v-model="limit" @change="get($event)">
