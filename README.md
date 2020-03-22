@@ -6,7 +6,7 @@ https://covid-19.tracker.rowles.ch/
 
 ### API
 
-https://covid-19-api.tracker.rowles.ch/statistics
+https://covid-19-api.tracker.rowles.ch/statistics?page=1&limit=10
 
 #### Querying the API
 
