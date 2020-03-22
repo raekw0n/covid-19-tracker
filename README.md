@@ -8,6 +8,9 @@ https://covid-19.tracker.rowles.ch/
 
 https://covid-19-api.tracker.rowles.ch/statistics?page=1&limit=10
 
+
+_Note: API is updated every 24 hours at 00:00_
+
 #### Querying the API
 
 By country, e.g.:
