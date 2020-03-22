@@ -304,12 +304,30 @@
                         </tr>
                         </tbody>
                     </table>
-                    <a class="mr-5" @click="prevPage">
-                        <font-awesome-icon :icon="['fas', 'arrow-left']"></font-awesome-icon>
-                    </a>
-                    <a class="" @click="nextPage">
-                        <font-awesome-icon :icon="['fas', 'arrow-right']"></font-awesome-icon>
-                    </a>
+                    <div class="d-flex justify-content-center">
+                        <nav class="mx-auto">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <button type="button" class="page-link" @click="prevPage">
+                                        Previous
+                                    </button>
+                                </li>
+                                <li class="page-item">
+                                    <button v-bind:key="pageNumber" type="button" class="page-link"
+                                            v-for="pageNumber in this.pages"
+                                            :class="{ 'active': pageNumber === page }"
+                                            @click="getPage(pageNumber)">
+                                        {{pageNumber}}
+                                    </button>
+                                </li>
+                                <li class="page-item">
+                                    <button type="button" @click="nextPage" class="page-link">
+                                        Next
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,6 +346,7 @@
                 total_deaths: 0,
                 total_recovered: 0,
                 page: 1,
+                pages: 1,
                 limit: 10,
                 sortKey: ['country'],
                 sortOrder: ['asc'],
@@ -360,12 +379,19 @@
                 });
                 this.$http.get('http://api.covid-19.local/statistics' + this.params, {
                 }).then((response) => {
-                    this.stats = response.data.data;
+                    this.stats = response.data.data.items;
+                    this.page = response.data.data.page;
+                    this.limit = response.data.data.limit;
+                    this.pages = response.data.data.pages;
                     this.total_cases = response.data.totals.confirmed;
                     this.total_deaths = response.data.totals.deaths;
                     this.total_recovered = response.data.totals.recovered;
                     history.pushState("", "", this.params)
                 });
+            },
+            getPage(page){
+                this.page = page;
+                this.get();
             },
             nextPage(){
                 this.page++;
@@ -397,14 +423,22 @@
         color: #ff8a37 !important;
     }
 
-    .pagination {
+    button.page-link {
         display: inline-block;
+
+        &.active {
+            background: #2c3e50;
+            color: white;
+        }
     }
 
-    .pagination a {
-        color: black;
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
+    button.page-link {
+        color: #2c3e50;
+        font-weight: 500;
+    }
+
+    .offset{
+        width: 500px !important;
+        margin: 20px auto;
     }
 </style>

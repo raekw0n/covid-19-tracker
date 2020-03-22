@@ -62,6 +62,11 @@ abstract class Controller
      */
     public function paginate(array $data, $page, $limit)
     {
-        return array_slice($data, (($page - 1) * $limit), $limit);
+        return [
+            'page'  => (int) $page,
+            'limit' => (int) $limit,
+            'pages' => (int) ceil(count($data) / $limit),
+            'items' => array_slice($data, (($page - 1) * $limit), $limit),
+        ];
     }
 }
