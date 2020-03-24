@@ -12,7 +12,7 @@ class DataSource
 
     protected $data = [];
 
-    protected static $modelMappings = [
+    protected static $fillable = [
         'Country_Region' => 'country',
         'Province_State' => 'province',
         'Confirmed'      => 'confirmed',
@@ -50,22 +50,19 @@ class DataSource
         $total = 0;
         while (($row = fgetcsv($this->handle)) !== false) {
             ++$total;
-            if($line === 0) {
+            if ($line === 0) {
                 $keys = $row;
             } else {
-                if(isset($keys)) {
-                    foreach ($keys as $key) {
-                        if ($key === 'Country_Region') $this->data[$line][static::$modelMappings[$key]] = $row[3];
-                        if ($key === 'Province_State') $this->data[$line][static::$modelMappings[$key]] = $row[2];
-                        if ($key === 'Confirmed')      $this->data[$line][static::$modelMappings[$key]] = $row[7];
-                        if ($key === 'Deaths')         $this->data[$line][static::$modelMappings[$key]] = $row[8];
-                        if ($key === 'Recovered')      $this->data[$line][static::$modelMappings[$key]] = $row[9];
-                        if ($key === 'Last_Update')    $this->data[$line][static::$modelMappings[$key]] = $row[4];
+                if (isset($keys)) {
+                    foreach ($keys as $idx => $key) {
+                        if (static::$fillable[$key]) {
+                            $this->data[$line][static::$fillable[$key]] = $row[$idx];
+                        }
                     }
 
                     $statistics = (new Statistics(app()))->setAttributes($this->data[$line]);
 
-                    if($statistics->save()) {
+                    if ($statistics->save()) {
                         ++$imported;
                     }
                 }
