@@ -29,7 +29,7 @@ $app->register(new Covid\Providers\MiddlewareServiceProvider());
 function app($dependency = null)
 {
     global $app;
-    return $app->offsetExists($dependency) ? $app->offsetGet($dependency) : false;
+    return $app->offsetExists($dependency) ? $app->offsetGet($dependency) : $app;
 }
 
 /*----------------------------------------

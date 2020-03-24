@@ -187,7 +187,7 @@ class Statistics extends Model
      */
     public function getByCountry(string $country)
     {
-        $this->setCountry($country);
+        $this->country = $country;
 
         $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
                             FROM statistics WHERE country RLIKE :country ORDER BY confirmed DESC;');
@@ -209,7 +209,7 @@ class Statistics extends Model
      */
     public function getByProvince(string $province)
     {
-        $this->setProvince($province);
+        $this->province = $province;
 
         $this->db->query('SELECT id, country, province, confirmed, deaths, recovered, last_updated
                             FROM statistics WHERE province RLIKE :province ORDER BY confirmed DESC;');

@@ -2,6 +2,7 @@
 
 namespace Covid\Controllers;
 
+use Covid\DataSource;
 use Klein\Request;
 use Klein\Response;
 use Pimple\Container;
@@ -89,12 +90,15 @@ class StatisticsController extends Controller
      */
     public function update(Response $response)
     {
-        $data = $this->api->call('stats')->data->covid19Stats;
+//        TODO new data from the weedmark api contains errors, keep monitoring.
+//        $data = $this->api->call('stats')->data->covid19Stats;
+//        foreach ($data as $country) {
+//            $this->model->setAttributes(toArray($country));
+//            $this->model->save();
+//        }
 
-        foreach ($data as $country) {
-            $this->model->setAttributes(toArray($country));
-            $this->model->save();
-        }
+        // Fetch data from https://github.com/CSSEGISandData/COVID-19
+        $data = (new DataSource('2020-03-23.csv'))->import();
 
         return $response->json(['data' => $data]);
     }
