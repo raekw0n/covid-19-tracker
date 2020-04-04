@@ -192,7 +192,7 @@
                     limit: this.limit
                 });
 
-                this.$http.get('http://api.covid-19.local/statistics' + this.params, {
+                this.$http.get('https://covid-19-api.tracker.rowles.ch/statistics' + this.params, {
                 }).then((response) => {
                     this.stats = response.data.data.items;
                     this.page = response.data.data.page;
@@ -207,7 +207,7 @@
                     history.pushState("", "", this.params)
                 });
 
-                this.$http.get('http://api.covid-19.local/countries', {
+                this.$http.get('https://covid-19-api.tracker.rowles.ch/countries', {
                 }).then((response) => {
                     this.countries = response.data.countries;
                 });
