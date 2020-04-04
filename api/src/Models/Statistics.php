@@ -290,5 +290,4 @@ class Statistics extends Model
     {
         $this->last_updated = $last_updated;
     }
-
 }

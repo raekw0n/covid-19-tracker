@@ -90,15 +90,8 @@ class StatisticsController extends Controller
      */
     public function update(Response $response)
     {
-//        TODO new data from the weedmark api contains errors, keep monitoring.
-//        $data = $this->api->call('stats')->data->covid19Stats;
-//        foreach ($data as $country) {
-//            $this->model->setAttributes(toArray($country));
-//            $this->model->save();
-//        }
-
         // Fetch data from https://github.com/CSSEGISandData/COVID-19
-        $data = (new DataSource('2020-03-23.csv'))->import();
+        $data = (new DataSource('2020-04-03.csv'))->import();
 
         return $response->json(['data' => $data]);
     }

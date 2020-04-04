@@ -10,10 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faCaretLeft, faCaretRight} from "@fortawesome/free-solid-svg-icons";
+import {faCaretLeft, faCaretRight, faFileCsv} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
-library.add(faGithub, faCaretLeft, faCaretRight);
+library.add(faGithub, faCaretLeft, faCaretRight, faFileCsv);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.prototype.$_ = _;

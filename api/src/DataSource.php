@@ -4,14 +4,21 @@ namespace Covid;
 
 use Covid\Models\Statistics;
 
+/**
+ * Class DataSource
+ */
 class DataSource
 {
+    /** @var string $file */
     protected $file;
 
+    /** @var resource $handle */
     protected $handle;
 
+    /** @var array $data */
     protected $data = [];
 
+    /** @var array $fillable */
     protected static $fillable = [
         'Country_Region' => 'country',
         'Province_State' => 'province',
@@ -38,7 +45,7 @@ class DataSource
     }
 
     /**
-     * Import statistics
+     * Import statistics.
      *
      * @return mixed
      */
@@ -55,7 +62,7 @@ class DataSource
             } else {
                 if (isset($keys)) {
                     foreach ($keys as $idx => $key) {
-                        if (static::$fillable[$key]) {
+                        if (isset(static::$fillable[$key])) {
                             $this->data[$line][static::$fillable[$key]] = $row[$idx];
                         }
                     }

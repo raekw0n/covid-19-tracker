@@ -1,10 +1,7 @@
 <template>
-    <div class="container-fluid pt-4 px-4">
+    <div class="container pt-3">
         <div class="row">
             <div class="col-md-12">
-                <a href="/" class="text-dark">
-                    <h1 class="heading">COVID-19 Statistics</h1>
-                </a>
                 <small class="text-muted">(Data source: <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkins CSSE</a>)</small>
                 <br />
                 <small class="text-muted">(Last updated: {{ this.last_updated|formatDate }})</small>
@@ -145,21 +142,6 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-                <p class="text-muted small">
-                    The data this API serves including all data, mapping, and analysis, copyright 2020 Johns Hopkins
-                    University, all rights reserved, is provided to the public strictly for educational and academic
-                    research purposes. The Website relies upon publicly available data from multiple sources, that do
-                    not always agree. Weedmark Systems (the author of the API this website consumes) and The Johns Hopkins University (the
-                    author of the data provided by this API) hereby disclaims any and all representations and warranties
-                    with respect to this website, including accuracy, fitness for use, and merchantability. Reliance on
-                    this website or API for medical guidance or use of this website or API in commerce is strictly
-                    prohibited.
-                </p>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -269,11 +251,11 @@
         background-color: transparent;
         border: none;
         display: inline-block;
-        color: #2c3e50;
+        color: rgba(0,0,0,.5);
         font-weight: 500;
 
         &.active {
-            background: #2c3e50;
+            background: rgba(0,0,0,.5);
             color: white;
         }
     }

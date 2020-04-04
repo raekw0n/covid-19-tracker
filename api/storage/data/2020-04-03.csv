@@ -1,0 +1,315 @@
+FIPS,Admin2,Province_State,Country_Region,Last_Update,Lat,Long_,Confirmed,Deaths,Recovered,Active,Combined_Key
+,,Alberta,Canada,2020-04-03 22:52:30,53.9333,-116.5765,969,13,0,0,"Alberta, Canada"
+,,Anguilla,United Kingdom,2020-04-03 22:46:20,18.2206,-63.0686,3,0,0,3,"Anguilla, United Kingdom"
+,,Anhui,China,2020-03-08 5:19:01,31.8257,117.2264,990,6,984,0,"Anhui, China"
+,,Aruba,Netherlands,2020-04-03 22:46:20,12.5211,-69.9683,62,0,1,61,"Aruba, Netherlands"
+,,Australian Capital Territory,Australia,2020-04-03 22:52:45,-35.4735,149.0124,91,1,18,72,"Australian Capital Territory, Australia"
+,,Beijing,China,2020-04-03 8:47:06,40.1824,116.4142,584,8,434,142,"Beijing, China"
+,,Bermuda,United Kingdom,2020-04-03 22:46:20,32.3078,-64.7505,35,0,14,21,"Bermuda, United Kingdom"
+,,"Bonaire, Sint Eustatius and Saba",Netherlands,2020-04-03 22:46:20,12.1784,-68.2385,2,0,0,2,"Bonaire, Sint Eustatius and Saba, Netherlands"
+,,British Columbia,Canada,2020-04-03 22:52:30,53.7267,-127.6476,1174,31,0,0,"British Columbia, Canada"
+,,British Virgin Islands,United Kingdom,2020-04-03 22:46:20,18.4207,-64.64,3,0,0,3,"British Virgin Islands, United Kingdom"
+,,Cayman Islands,United Kingdom,2020-04-03 22:46:20,19.3133,-81.2546,28,1,0,27,"Cayman Islands, United Kingdom"
+,,Channel Islands,United Kingdom,2020-04-03 22:46:20,49.3723,-2.3644,232,4,13,215,"Channel Islands, United Kingdom"
+,,Chongqing,China,2020-03-29 0:14:12,30.0572,107.874,579,6,570,3,"Chongqing, China"
+,,Curacao,Netherlands,2020-04-03 22:46:20,12.1696,-68.99,11,1,3,7,"Curacao, Netherlands"
+,,Diamond Princess,Canada,2020-04-03 22:52:30,,,0,1,0,0,"Diamond Princess, Canada"
+,,Faroe Islands,Denmark,2020-04-03 22:46:20,61.8926,-6.9118,179,0,91,88,"Faroe Islands, Denmark"
+,,French Guiana,France,2020-04-03 22:46:20,4,-53,57,0,22,35,"French Guiana, France"
+,,French Polynesia,France,2020-04-03 22:46:20,-17.6797,-149.4068,39,0,0,39,"French Polynesia, France"
+,,Fujian,China,2020-04-03 2:47:58,26.0789,117.9874,349,1,300,48,"Fujian, China"
+,,Gansu,China,2020-04-01 14:00:34,37.8099,101.0583,138,2,127,9,"Gansu, China"
+,,Gibraltar,United Kingdom,2020-04-03 22:46:20,36.1408,-5.3536,95,0,46,49,"Gibraltar, United Kingdom"
+,,Grand Princess,Canada,2020-04-03 22:52:30,,,13,0,0,0,"Grand Princess, Canada"
+,,Greenland,Denmark,2020-04-03 22:46:20,71.7069,-42.6043,10,0,3,7,"Greenland, Denmark"
+,,Guadeloupe,France,2020-04-03 22:46:20,16.265,-61.551,130,7,24,99,"Guadeloupe, France"
+,,Guangdong,China,2020-04-03 6:02:14,23.3417,113.4244,1514,8,1368,138,"Guangdong, China"
+,,Guangxi,China,2020-04-02 0:16:02,23.8298,108.7881,254,2,252,0,"Guangxi, China"
+,,Guizhou,China,2020-03-18 1:37:43,26.8154,106.8748,146,2,144,0,"Guizhou, China"
+,,Hainan,China,2020-03-24 4:19:14,19.1959,109.7453,168,6,162,0,"Hainan, China"
+,,Hebei,China,2020-04-03 1:13:53,39.549,116.1306,326,6,310,10,"Hebei, China"
+,,Heilongjiang,China,2020-04-03 0:10:11,47.862,127.7615,489,13,469,7,"Heilongjiang, China"
+,,Henan,China,2020-03-29 1:44:01,33.882,113.614,1276,22,1251,3,"Henan, China"
+,,Hong Kong,China,2020-04-03 9:35:41,22.3,114.2,845,4,173,668,"Hong Kong, China"
+,,Hubei,China,2020-04-03 2:54:04,30.9756,112.2707,67802,3203,63612,987,"Hubei, China"
+,,Hunan,China,2020-04-02 1:30:57,27.6104,111.7088,1019,4,1014,1,"Hunan, China"
+,,Inner Mongolia,China,2020-04-01 23:56:51,44.0935,113.9448,117,1,74,42,"Inner Mongolia, China"
+,,Isle of Man,United Kingdom,2020-04-03 22:46:20,54.2361,-4.5481,114,1,0,113,"Isle of Man, United Kingdom"
+,,Jiangsu,China,2020-04-03 3:12:20,32.9711,119.455,651,0,632,19,"Jiangsu, China"
+,,Jiangxi,China,2020-03-30 3:15:15,27.614,115.7221,937,1,935,1,"Jiangxi, China"
+,,Jilin,China,2020-03-29 0:28:20,43.6661,126.1923,98,1,92,5,"Jilin, China"
+,,Liaoning,China,2020-04-02 13:24:15,41.2956,122.6085,141,2,124,15,"Liaoning, China"
+,,Macau,China,2020-04-03 17:47:04,22.1667,113.55,43,0,10,33,"Macau, China"
+,,Manitoba,Canada,2020-04-03 22:52:30,53.7609,-98.8139,182,2,0,0,"Manitoba, Canada"
+,,Martinique,France,2020-04-03 22:46:20,14.6415,-61.0242,143,3,27,113,"Martinique, France"
+,,Mayotte,France,2020-04-03 22:46:20,-12.8275,45.166244,128,2,10,116,"Mayotte, France"
+,,Montserrat,United Kingdom,2020-04-03 22:46:20,16.742498,-62.187366,6,0,0,6,"Montserrat, United Kingdom"
+,,New Brunswick,Canada,2020-04-03 22:52:30,46.5653,-66.4619,91,0,0,0,"New Brunswick, Canada"
+,,New Caledonia,France,2020-04-03 22:46:20,-20.904305,165.618042,18,0,1,17,"New Caledonia, France"
+,,New South Wales,Australia,2020-04-03 22:52:45,-33.8688,151.2093,2389,12,4,2373,"New South Wales, Australia"
+,,Newfoundland and Labrador,Canada,2020-04-03 22:52:30,53.1355,-57.6604,195,1,0,0,"Newfoundland and Labrador, Canada"
+,,Ningxia,China,2020-03-16 8:47:05,37.2692,106.1655,75,0,75,0,"Ningxia, China"
+,,Northern Territory,Australia,2020-04-03 22:52:45,-12.4634,130.8456,22,0,0,22,"Northern Territory, Australia"
+,,Northwest Territories,Canada,2020-04-03 22:52:30,64.8255,-124.8457,2,0,0,0,",Northwest Territories,Canada"
+,,Nova Scotia,Canada,2020-04-03 22:52:30,44.682,-63.7443,207,0,0,0,"Nova Scotia, Canada"
+,,Ontario,Canada,2020-04-03 22:52:30,51.2538,-85.3232,3255,67,0,0,"Ontario, Canada"
+,,Prince Edward Island,Canada,2020-04-03 22:52:30,46.5107,-63.4168,22,0,0,0,"Prince Edward Island, Canada"
+,,Qinghai,China,2020-02-23 11:19:02,35.7452,95.9956,18,0,18,0,"Qinghai, China"
+,,Quebec,Canada,2020-04-03 22:52:30,52.9399,-73.5491,6101,61,0,0,"Quebec, Canada"
+,,Queensland,Australia,2020-04-03 22:52:45,-27.4698,153.0251,873,4,8,861,"Queensland, Australia"
+,,Recovered,Canada,2020-04-03 22:52:30,,,0,0,2175,0,"Recovered, Canada"
+,,Reunion,France,2020-04-03 22:46:20,-21.1151,55.5364,321,0,40,281,"Reunion, France"
+,,Saint Barthelemy,France,2020-04-03 22:46:20,17.9,-62.8333,6,0,1,5,"Saint Barthelemy, France"
+,,Saskatchewan,Canada,2020-04-03 22:52:30,52.9399,-106.4509,220,3,0,0,"Saskatchewan, Canada"
+,,Shaanxi,China,2020-04-03 5:47:58,35.1917,108.8701,255,3,244,8,"Shaanxi, China"
+,,Shandong,China,2020-04-03 0:46:33,36.3427,118.1498,778,7,754,17,"Shandong, China"
+,,Shanghai,China,2020-04-03 6:56:51,31.202,121.4491,526,6,348,172,"Shanghai, China"
+,,Shanxi,China,2020-03-31 23:35:56,37.5777,112.2922,137,0,133,4,"Shanxi, China"
+,,Sichuan,China,2020-04-03 4:49:20,30.6171,102.7103,555,3,537,15,"Sichuan, China"
+,,Sint Maarten,Netherlands,2020-04-03 22:46:20,18.0425,-63.0548,23,2,6,15,"Sint Maarten, Netherlands"
+,,South Australia,Australia,2020-04-03 22:52:45,-34.9285,138.6007,396,0,46,350,"South Australia, Australia"
+,,St Martin,France,2020-04-03 22:46:20,18.0708,-63.0501,22,1,2,19,"St Martin, France"
+,,Tasmania,Australia,2020-04-03 22:52:45,-42.8821,147.3272,74,2,5,67,"Tasmania, Australia"
+,,Tianjin,China,2020-04-03 9:22:33,39.3054,117.323,180,3,140,37,"Tianjin, China"
+,,Tibet,China,2020-02-23 11:19:02,31.6927,88.0924,1,0,1,0,"Tibet, China"
+,,Turks and Caicos Islands,United Kingdom,2020-04-03 22:46:20,21.694,-71.7979,5,0,0,5,"Turks and Caicos Islands, United Kingdom"
+,,Victoria,Australia,2020-04-03 22:52:45,-37.8136,144.9631,1085,7,476,602,"Victoria, Australia"
+,,Western Australia,Australia,2020-04-03 22:52:45,-31.9505,115.8605,400,2,92,306,"Western Australia, Australia"
+,,Xinjiang,China,2020-03-08 5:31:02,41.1129,85.2401,76,3,73,0,"Xinjiang, China"
+,,Yukon,Canada,2020-04-03 22:52:30,64.2823,-135,6,0,0,0,",Yukon,Canada"
+,,Yunnan,China,2020-04-02 23:33:43,24.974,101.487,184,2,172,10,"Yunnan, China"
+,,Zhejiang,China,2020-04-03 3:12:20,29.1832,120.0934,1260,1,1228,31,"Zhejiang, China"
+,,,Afghanistan,2020-04-03 22:46:20,33.93911,67.709953,281,6,10,265,Afghanistan
+,,,Albania,2020-04-03 22:46:20,41.1533,20.1683,304,17,89,198,Albania
+,,,Algeria,2020-04-03 22:46:20,28.0339,1.6596,1171,105,62,1004,Algeria
+,,,Andorra,2020-04-03 22:46:20,42.5063,1.5218,439,16,16,407,Andorra
+,,,Angola,2020-04-03 22:46:20,-11.2027,17.8739,8,2,1,5,Angola
+,,,Antigua and Barbuda,2020-04-03 22:46:20,17.0608,-61.7964,15,0,0,15,Antigua and Barbuda
+,,,Argentina,2020-04-03 22:46:20,-38.4161,-63.6167,1265,39,266,960,Argentina
+,,,Armenia,2020-04-03 22:46:20,40.0691,45.0382,736,7,43,686,Armenia
+,,,Austria,2020-04-03 22:46:20,47.5162,14.5501,11524,168,2022,9334,Austria
+,,,Azerbaijan,2020-04-03 22:46:20,40.1431,47.5769,443,5,32,406,Azerbaijan
+,,,Bahamas,2020-04-03 22:46:20,25.025885,-78.035889,24,1,1,22,Bahamas
+,,,Bahrain,2020-04-03 22:46:20,26.0275,50.55,672,4,382,286,Bahrain
+,,,Bangladesh,2020-04-03 22:46:20,23.685,90.3563,61,6,26,29,Bangladesh
+,,,Barbados,2020-04-03 22:46:20,13.1939,-59.5432,51,0,0,51,Barbados
+,,,Belarus,2020-04-03 22:46:20,53.7098,27.9534,351,4,53,294,Belarus
+,,,Belgium,2020-04-03 22:46:20,50.8333,4.469936,16770,1143,2872,12755,Belgium
+,,,Belize,2020-04-03 22:46:20,17.1899,-88.4976,4,0,0,4,",,Belize"
+,,,Benin,2020-04-03 22:46:20,9.3077,2.3158,16,0,2,14,Benin
+,,,Bhutan,2020-04-03 22:46:20,27.5142,90.4336,5,0,2,3,Bhutan
+,,,Bolivia,2020-04-03 22:46:20,-16.2902,-63.5887,132,9,1,122,Bolivia
+,,,Bosnia and Herzegovina,2020-04-03 22:46:20,43.9159,17.6791,579,17,27,535,Bosnia and Herzegovina
+,,,Botswana,2020-04-03 22:46:20,-22.3285,24.6849,4,1,0,3,Botswana
+,,,Brazil,2020-04-03 22:46:20,-14.235,-51.9253,9056,359,127,8570,Brazil
+,,,Brunei,2020-04-03 22:46:20,4.5353,114.7277,134,1,65,68,Brunei
+,,,Bulgaria,2020-04-03 22:46:20,42.7339,25.4858,485,14,30,441,Bulgaria
+,,,Burkina Faso,2020-04-03 22:46:20,12.2383,-1.5616,302,16,50,236,Burkina Faso
+,,,Burma,2020-04-03 22:46:20,21.9162,95.956,20,1,0,19,Burma
+,,,Burundi,2020-04-03 22:46:20,-3.3731,29.9189,3,0,0,3,Burundi
+,,,Cabo Verde,2020-04-03 22:46:20,16.5388,-23.0418,6,1,0,5,Cabo Verde
+,,,Cambodia,2020-04-03 22:46:20,11.55,104.9167,114,0,35,79,Cambodia
+,,,Cameroon,2020-04-03 22:46:20,3.848,11.5021,509,8,17,484,Cameroon
+,,,Central African Republic,2020-04-03 22:46:20,6.6111,20.9394,8,0,0,8,Central African Republic
+,,,Chad,2020-04-03 22:46:20,15.4542,18.7322,8,0,0,8,Chad
+,,,Chile,2020-04-03 22:46:20,-35.6751,-71.543,3737,22,427,3288,Chile
+,,,Colombia,2020-04-03 22:46:20,4.5709,-74.2973,1267,25,55,1187,Colombia
+,,,Congo (Brazzaville),2020-04-03 22:46:20,-4.2634,15.2832,22,2,2,18,Congo (Brazzaville)
+,,,Congo (Kinshasa),2020-04-03 22:46:20,-4.322447,15.307045,134,13,3,118,Congo (Kinshasa)
+,,,Costa Rica,2020-04-03 22:46:20,9.7489,-83.7534,416,2,11,403,Costa Rica
+,,,Cote d'Ivoire,2020-04-03 22:46:20,7.54,-5.5471,218,1,19,198,Cote d'Ivoire
+,,,Croatia,2020-04-03 22:46:20,45.1,15.2,1079,8,92,979,Croatia
+,,,Cuba,2020-04-03 22:46:20,21.521757,-77.781167,269,6,15,248,Cuba
+,,,Cyprus,2020-04-03 22:46:20,35.1264,33.4299,396,11,28,357,Cyprus
+,,,Czechia,2020-04-03 22:46:20,49.8175,15.473,4091,53,72,3966,Czechia
+,,,Denmark,2020-04-03 22:46:20,56.2639,9.5018,3757,139,1193,2425,Denmark
+,,,Diamond Princess,2020-04-03 22:46:20,,,712,11,619,82,Diamond Princess
+,,,Djibouti,2020-04-03 22:46:20,11.8251,42.5903,49,0,8,41,Djibouti
+,,,Dominica,2020-04-03 22:46:20,15.415,-61.371,12,0,0,12,Dominica
+,,,Dominican Republic,2020-04-03 22:46:20,18.7357,-70.1627,1488,68,16,1404,Dominican Republic
+,,,Ecuador,2020-04-03 22:46:20,-1.8312,-78.1834,3368,145,65,3158,Ecuador
+,,,Egypt,2020-04-03 22:46:20,26.820553,30.802498,985,66,216,703,Egypt
+,,,El Salvador,2020-04-03 22:46:20,13.7942,-88.8965,46,2,0,44,El Salvador
+,,,Equatorial Guinea,2020-04-03 22:46:20,1.6508,10.2679,16,0,1,15,Equatorial Guinea
+,,,Eritrea,2020-04-03 22:46:20,15.1794,39.7823,22,0,0,22,Eritrea
+,,,Estonia,2020-04-03 22:46:20,58.5953,25.0136,961,12,48,901,Estonia
+,,,Eswatini,2020-04-03 22:46:20,-26.5225,31.4659,9,0,0,9,Eswatini
+,,,Ethiopia,2020-04-03 22:46:20,9.145,40.4897,35,0,3,32,Ethiopia
+,,,Fiji,2020-04-03 22:46:20,-17.7134,178.065,7,0,0,7,Fiji
+,,,Finland,2020-04-03 22:46:20,61.92411,25.748151,1615,20,300,1295,Finland
+,,,France,2020-04-03 22:46:20,46.2276,2.2137,64338,6507,14008,43823,France
+,,,Gabon,2020-04-03 22:46:20,-0.8037,11.6094,21,1,1,19,Gabon
+,,,Gambia,2020-04-03 22:46:20,13.4432,-15.3101,4,1,2,1,Gambia
+,,,Georgia,2020-04-03 22:46:20,42.3154,43.3569,155,0,28,127,Georgia
+,,,Germany,2020-04-03 22:46:20,51.165691,10.451526,91159,1275,24575,65309,Germany
+,,,Ghana,2020-04-03 22:46:20,7.9465,-1.0232,205,5,31,169,Ghana
+,,,Greece,2020-04-03 22:46:20,39.0742,21.8243,1613,63,78,1472,Greece
+,,,Grenada,2020-04-03 22:46:20,12.1165,-61.679,12,0,0,12,Grenada
+,,,Guatemala,2020-04-03 22:46:20,15.7835,-90.2308,50,1,12,37,Guatemala
+,,,Guinea,2020-04-03 22:46:20,9.9456,-9.6966,73,0,2,71,Guinea
+,,,Guinea-Bissau,2020-04-03 22:46:20,11.8037,-15.1804,15,0,0,15,Guinea-Bissau
+,,,Guyana,2020-04-03 22:46:20,4.860416,-58.93018,23,4,0,19,Guyana
+,,,Haiti,2020-04-03 22:46:20,18.9712,-72.2852,18,0,1,17,Haiti
+,,,Holy See,2020-04-03 22:46:20,41.9029,12.4534,7,0,0,7,Holy See
+,,,Honduras,2020-04-03 22:46:20,15.2,-86.2419,222,15,3,204,Honduras
+,,,Hungary,2020-04-03 22:46:20,47.1625,19.5033,623,26,43,554,Hungary
+,,,Iceland,2020-04-03 22:46:20,64.9631,-19.0208,1364,4,309,1051,Iceland
+,,,India,2020-04-03 22:46:20,20.593684,78.96288,2567,72,192,2303,India
+,,,Indonesia,2020-04-03 22:46:20,-0.7893,113.9213,1986,181,134,1671,Indonesia
+,,,Iran,2020-04-03 22:46:20,32.427908,53.688046,53183,3294,17935,31954,Iran
+,,,Iraq,2020-04-03 22:46:20,33.223191,43.679291,820,54,226,540,Iraq
+,,,Ireland,2020-04-03 22:46:20,53.1424,-7.6921,4273,120,5,4148,Ireland
+,,,Israel,2020-04-03 22:46:20,31.046051,34.851612,7428,40,403,6985,Israel
+,,,Italy,2020-04-03 22:46:20,41.87194,12.56738,119827,14681,19758,85388,Italy
+,,,Jamaica,2020-04-03 22:46:20,18.1096,-77.2975,47,3,2,42,Jamaica
+,,,Japan,2020-04-03 22:46:20,36.204824,138.252924,2617,63,514,2040,Japan
+,,,Jordan,2020-04-03 22:46:20,31.24,36.51,310,5,58,247,Jordan
+,,,Kazakhstan,2020-04-03 22:46:20,48.0196,66.9237,464,6,29,429,Kazakhstan
+,,,Kenya,2020-04-03 22:46:20,-0.0236,37.9062,122,4,4,114,Kenya
+,,,"Korea, South",2020-04-03 22:46:20,35.907757,127.766922,10062,174,6021,3867,"Korea, South"
+,,,Kosovo,2020-04-03 22:46:20,42.602636,20.902977,126,1,10,115,Kosovo
+,,,Kuwait,2020-04-03 22:46:20,29.31166,47.481766,417,0,82,335,Kuwait
+,,,Kyrgyzstan,2020-04-03 22:46:20,41.20438,74.766098,130,1,6,123,Kyrgyzstan
+,,,Laos,2020-04-03 22:46:20,19.85627,102.495496,10,0,0,10,Laos
+,,,Latvia,2020-04-03 22:46:20,56.8796,24.6032,493,1,1,491,Latvia
+,,,Lebanon,2020-04-03 22:46:20,33.8547,35.8623,508,17,50,441,Lebanon
+,,,Liberia,2020-04-03 22:46:20,6.428055,-9.429499,7,0,0,7,Liberia
+,,,Libya,2020-04-03 22:46:20,26.3351,17.228331,11,1,0,10,Libya
+,,,Liechtenstein,2020-04-03 22:46:20,47.14,9.55,75,0,0,75,Liechtenstein
+,,,Lithuania,2020-04-03 22:46:20,55.1694,23.8813,696,9,7,680,Lithuania
+,,,Luxembourg,2020-04-03 22:46:20,49.8153,6.1296,2612,31,500,2081,Luxembourg
+,,,MS Zaandam,2020-04-03 22:46:20,,,9,2,0,7,",,MS Zaandam"
+,,,Madagascar,2020-04-03 22:46:20,-18.766947,46.869107,70,0,0,70,Madagascar
+,,,Malawi,2020-04-03 22:46:20,-13.254308,34.301525,3,0,0,3,Malawi
+,,,Malaysia,2020-04-03 22:46:20,4.210484,101.975766,3333,53,827,2453,Malaysia
+,,,Maldives,2020-04-03 22:46:20,3.2028,73.2207,19,0,13,6,Maldives
+,,,Mali,2020-04-03 22:46:20,17.570692,-3.996166,39,3,0,36,Mali
+,,,Malta,2020-04-03 22:46:20,35.9375,14.3754,202,0,2,200,Malta
+,,,Mauritania,2020-04-03 22:46:20,21.0079,-10.9408,6,1,2,3,",,Mauritania"
+,,,Mauritius,2020-04-03 22:46:20,-20.348404,57.552152,186,7,0,179,Mauritius
+,,,Mexico,2020-04-03 22:46:20,23.6345,-102.5528,1510,50,633,827,Mexico
+,,,Moldova,2020-04-03 22:46:20,47.4116,28.3699,591,8,26,557,Moldova
+,,,Monaco,2020-04-03 22:46:20,43.7333,7.4167,64,1,3,60,Monaco
+,,,Mongolia,2020-04-03 22:46:20,46.8625,103.8467,14,0,2,12,Mongolia
+,,,Montenegro,2020-04-03 22:46:20,42.708678,19.37439,174,2,1,171,Montenegro
+,,,Morocco,2020-04-03 22:46:20,31.7917,-7.0926,791,48,57,686,Morocco
+,,,Mozambique,2020-04-03 22:46:20,-18.665695,35.529562,10,0,0,10,Mozambique
+,,,Namibia,2020-04-03 22:46:20,-22.9576,18.4904,14,0,3,11,Namibia
+,,,Nepal,2020-04-03 22:46:20,28.1667,84.25,6,0,1,5,Nepal
+,,,Netherlands,2020-04-03 22:46:20,52.1326,5.2913,15723,1487,250,13986,Netherlands
+,,,New Zealand,2020-04-03 22:46:20,-40.9006,174.886,868,1,103,764,New Zealand
+,,,Nicaragua,2020-04-03 22:46:20,12.865416,-85.207229,5,1,0,4,Nicaragua
+,,,Niger,2020-04-03 22:46:20,17.607789,8.081666,120,5,0,115,Niger
+,,,Nigeria,2020-04-03 22:46:20,9.082,8.6753,210,4,25,181,Nigeria
+,,,North Macedonia,2020-04-03 22:46:20,41.6086,21.7453,430,12,20,398,North Macedonia
+,,,Norway,2020-04-03 22:46:20,60.472,8.4689,5370,59,32,5279,Norway
+,,,Oman,2020-04-03 22:46:20,21.512583,55.923255,252,1,57,194,Oman
+,,,Pakistan,2020-04-03 22:46:20,30.3753,69.3451,2686,40,126,2520,Pakistan
+,,,Panama,2020-04-03 22:46:20,8.538,-80.7821,1475,37,10,1428,Panama
+,,,Papua New Guinea,2020-04-03 22:46:20,-6.314993,143.95555,1,0,0,1,Papua New Guinea
+,,,Paraguay,2020-04-03 22:46:20,-23.4425,-58.4438,92,3,6,83,Paraguay
+,,,Peru,2020-04-03 22:46:20,-9.19,-75.0152,1595,61,537,997,Peru
+,,,Philippines,2020-04-03 22:46:20,12.879721,121.774017,3018,136,52,2830,Philippines
+,,,Poland,2020-04-03 22:46:20,51.9194,19.1451,3383,71,56,3256,Poland
+,,,Portugal,2020-04-03 22:46:20,39.3999,-8.2245,9886,246,68,9572,Portugal
+,,,Qatar,2020-04-03 22:46:20,25.3548,51.1839,1075,3,93,979,Qatar
+,,,Romania,2020-04-03 22:46:20,45.9432,24.9668,3183,133,283,2767,Romania
+,,,Russia,2020-04-03 22:46:20,61.52401,105.318756,4149,34,281,3834,Russia
+,,,Rwanda,2020-04-03 22:46:20,-1.9403,29.8739,89,0,0,89,Rwanda
+,,,Saint Kitts and Nevis,2020-04-03 22:46:20,17.357822,-62.782998,9,0,0,9,Saint Kitts and Nevis
+,,,Saint Lucia,2020-04-03 22:46:20,13.9094,-60.9789,13,0,1,12,Saint Lucia
+,,,Saint Vincent and the Grenadines,2020-04-03 22:46:20,12.9843,-61.2872,3,0,1,2,Saint Vincent and the Grenadines
+,,,San Marino,2020-04-03 22:46:20,43.9424,12.4578,245,30,21,194,San Marino
+,,,Saudi Arabia,2020-04-03 22:46:20,23.885942,45.079162,2039,25,351,1663,Saudi Arabia
+,,,Senegal,2020-04-03 22:46:20,14.4974,-14.4524,207,1,66,140,Senegal
+,,,Serbia,2020-04-03 22:46:20,44.0165,21.0059,1476,39,0,1437,Serbia
+,,,Seychelles,2020-04-03 22:46:20,-4.6796,55.492,10,0,0,10,Seychelles
+,,,Sierra Leone,2020-04-03 22:46:20,8.460555,-11.779889,2,0,0,2,Sierra Leone
+,,,Singapore,2020-04-03 22:46:20,1.2833,103.8333,1114,5,282,827,Singapore
+,,,Slovakia,2020-04-03 22:46:20,48.669,19.699,450,1,10,439,Slovakia
+,,,Slovenia,2020-04-03 22:46:20,46.1512,14.9955,934,20,70,844,Slovenia
+,,,Somalia,2020-04-03 22:46:20,5.152149,46.199616,7,0,1,6,Somalia
+,,,South Africa,2020-04-03 22:46:20,-30.5595,22.9375,1505,9,95,1401,South Africa
+,,,Spain,2020-04-03 22:46:20,40.463667,-3.74922,119199,11198,30513,77488,Spain
+,,,Sri Lanka,2020-04-03 22:46:20,7.873054,80.771797,159,4,24,131,Sri Lanka
+,,,Sudan,2020-04-03 22:46:20,12.8628,30.2176,10,2,2,6,Sudan
+,,,Suriname,2020-04-03 22:46:20,3.9193,-56.0278,10,1,0,9,Suriname
+,,,Sweden,2020-04-03 22:46:20,60.128161,18.643501,6131,358,205,5568,Sweden
+,,,Switzerland,2020-04-03 22:46:20,46.8182,8.2275,19606,591,4846,14169,Switzerland
+,,,Syria,2020-04-03 22:46:20,34.802075,38.996815,16,2,0,14,Syria
+,,,Taiwan*,2020-04-03 8:10:40,23.7,121,348,5,50,293,Taiwan*
+,,,Tanzania,2020-04-03 22:46:20,-6.369028,34.888822,20,1,3,16,Tanzania
+,,,Thailand,2020-04-03 22:46:20,15.870032,100.992541,1978,19,612,1347,Thailand
+,,,Timor-Leste,2020-04-03 22:46:20,-8.874217,125.727539,1,0,0,1,Timor-Leste
+,,,Togo,2020-04-03 22:46:20,8.6195,0.8248,40,3,17,20,Togo
+,,,Trinidad and Tobago,2020-04-03 22:46:20,10.6918,-61.2225,98,6,1,91,Trinidad and Tobago
+,,,Tunisia,2020-04-03 22:46:20,33.886917,9.537499,495,18,5,472,Tunisia
+,,,Turkey,2020-04-03 22:46:20,38.9637,35.2433,20921,425,484,20012,Turkey
+,,,Uganda,2020-04-03 22:46:20,1.373333,32.290275,48,0,0,48,Uganda
+,,,Ukraine,2020-04-03 22:46:20,48.3794,31.1656,1072,27,22,1023,Ukraine
+,,,United Arab Emirates,2020-04-03 22:46:20,23.424076,53.847818,1264,9,108,1147,United Arab Emirates
+,,,United Kingdom,2020-04-03 22:46:20,55.3781,-3.436,38168,3605,135,34428,United Kingdom
+,,,Uruguay,2020-04-03 22:46:20,-32.5228,-55.7658,369,4,68,297,Uruguay
+,,,Uzbekistan,2020-04-03 22:46:20,41.377491,64.585262,227,2,25,200,Uzbekistan
+,,,Venezuela,2020-04-03 22:46:20,6.4238,-66.5897,153,7,52,94,Venezuela
+,,,Vietnam,2020-04-03 22:46:20,14.058324,108.277199,237,0,85,152,Vietnam
+,,,West Bank and Gaza,2020-04-03 22:46:20,31.9522,35.2332,194,1,21,172,West Bank and Gaza
+,,,Zambia,2020-04-03 22:46:20,-13.133897,27.849332,39,1,2,36,Zambia
+,,,Zimbabwe,2020-04-03 22:46:20,-19.015438,29.154857,9,1,0,8,Zimbabwe
+,,South Carolina,United States,2020-04-03 22:46:20,-19.015438,29.154857,1700,34,0,0,United States
+,,Louisiana,United States,2020-04-03 22:46:20,-19.015438,29.154857,10297,370,0,0,United States
+,,Virginia,United States,2020-04-03 22:46:20,-19.015438,29.154857,2012,46,0,0,United States
+,,Idaho,United States,2020-04-03 22:46:20,-19.015438,29.154857,891,9,0,0,United States
+,,Iowa,United States,2020-04-03 22:46:20,-19.015438,29.154857,699,11,0,0,United States
+,,Missouri,United States,2020-04-03 22:46:20,-19.015438,29.154857,1864,25,0,0,United States
+,,Oklahoma,United States,2020-04-03 22:46:20,-19.015438,29.154857,990,38,0,0,United States
+,,Colorado,United States,2020-04-03 22:46:20,-19.015438,29.154857,3742,97,0,0,United States
+,,Illinois,United States,2020-04-03 22:46:20,-19.015438,29.154857,8904,210,0,0,United States
+,,Indiana,United States,2020-04-03 22:46:20,-19.015438,29.154857,3437,102,0,0,United States
+,,Mississippi,United States,2020-04-03 22:46:20,-19.015438,29.154857,1358,29,0,0,United States
+,,Nebraska,United States,2020-04-03 22:46:20,-19.015438,29.154857,279,6,0,0,United States
+,,Pennsylvania,United States,2020-04-03 22:46:20,-19.015438,29.154857,8570,102,0,0,United States
+,,Washington,United States,2020-04-03 22:46:20,-19.015438,29.154857,6846,291,0,0,United States
+,,Wisconsin,United States,2020-04-03 22:46:20,-19.015438,29.154857,2012,51,0,0,United States
+,,Vermont,United States,2020-04-03 22:46:20,-19.015438,29.154857,389,17,0,0,United States
+,,Florida,United States,2020-04-03 22:46:20,-19.015438,29.154857,10268,170,0,0,United States
+,,North Carolina,United States,2020-04-03 22:46:20,-19.015438,29.154857,2251,27,0,0,United States
+,,California,United States,2020-04-03 22:46:20,-19.015438,29.154857,12004,265,0,0,United States
+,,New York,United States,2020-04-03 22:46:20,-19.015438,29.154857,102987,2935,0,0,United States
+,,Wyoming,United States,2020-04-03 22:46:20,-19.015438,29.154857,162,0,0,0,United States
+,,Michigan,United States,2020-04-03 22:46:20,-19.015438,29.154857,12744,479,0,0,United States
+,,Maryland,United States,2020-04-03 22:46:20,-19.015438,29.154857,2758,43,0,0,United States
+,,Kentucky,United States,2020-04-03 22:46:20,-19.015438,29.154857,770,34,0,0,United States
+,,Ohio,United States,2020-04-03 22:46:20,-19.015438,29.154857,3312,91,0,0,United States
+,,Alaska,United States,2020-04-03 22:46:20,-19.015438,29.154857,157,3,0,0,United States
+,,Tennessee,United States,2020-04-03 22:46:20,-19.015438,29.154857,3067,41,0,0,United States
+,,Texas,United States,2020-04-03 22:46:20,-19.015438,29.154857,5734,100,0,0,United States
+,,Maine,United States,2020-04-03 22:46:20,-19.015438,29.154857,432,9,0,0,United States
+,,Minnesota,United States,2020-04-03 22:46:20,-19.015438,29.154857,788,22,0,0,United States
+,,Arizona,United States,2020-04-03 22:46:20,-19.015438,29.154857,1937,41,0,0,United States
+,,Georgia,United States,2020-04-03 22:46:20,-19.015438,29.154857,5831,184,0,0,United States
+,,Arkansas,United States,2020-04-03 22:46:20,-19.015438,29.154857,704,12,0,0,United States
+,,Kansas,United States,2020-04-03 22:46:20,-19.015438,29.154857,629,18,0,0,United States
+,,New Jersey,United States,2020-04-03 22:46:20,-19.015438,29.154857,29895,646,0,0,United States
+,,South Dakota,United States,2020-04-03 22:46:20,-19.015438,29.154857,187,2,0,0,United States
+,,Alabama,United States,2020-04-03 22:46:20,-19.015438,29.154857,1495,38,0,0,United States
+,,West Virginia,United States,2020-04-03 22:46:20,-19.015438,29.154857,237,2,0,0,United States
+,,North Dakota,United States,2020-04-03 22:46:20,-19.015438,29.154857,173,3,0,0,United States
+,,Massachusetts,United States,2020-04-03 22:46:20,-19.015438,29.154857,10402,192,0,0,United States
+,,New Hampshire,United States,2020-04-03 22:46:20,-19.015438,29.154857,479,5,0,0,United States
+,,Oregon,United States,2020-04-03 22:46:20,-19.015438,29.154857,899,22,0,0,United States
+,,New Mexico,United States,2020-04-03 22:46:20,-19.015438,29.154857,534,10,0,0,United States
+,,Utah,United States,2020-04-03 22:46:20,-19.015438,29.154857,1255,7,0,0,United States
+,,Rhode Island,United States,2020-04-03 22:46:20,-19.015438,29.154857,711,14,0,0,United States
+,,Montana,United States,2020-04-03 22:46:20,-19.015438,29.154857,243,5,0,0,United States
+,,Nevada,United States,2020-04-03 22:46:20,-19.015438,29.154857,1514,43,0,0,United States
+,,District of Columbia,United States,2020-04-03 22:46:20,-19.015438,29.154857,757,15,0,0,United States
+,,Connecticut,United States,2020-04-03 22:46:20,-19.015438,29.154857,4914,131,0,0,United States
+,,Hawaii,United States,2020-04-03 22:46:20,-19.015438,29.154857,319,3,0,0,United States
+,,Delaware,United States,2020-04-03 22:46:20,-19.015438,29.154857,450,14,0,0,United States
+,,Northern Mariana Islands,United States,2020-04-03 22:46:20,-19.015438,29.154857,8,1,0,0,United States
+,,Diamond Princess,United States,2020-04-03 22:46:20,-19.015438,29.154857,49,0,0,0,United States
+,,Grand Princess,United States,2020-04-03 22:46:20,-19.015438,29.154857,103,3,0,0,United States
+,,Guam,United States,2020-04-03 22:46:20,-19.015438,29.154857,84,4,0,0,United States
+,,Puerto Rico,United States,2020-04-03 22:46:20,-19.015438,29.154857,316,15,0,0,United States
+,,Virgin Islands,United States,2020-04-03 22:46:20,-19.015438,29.154857,37,0,0,0,United States
